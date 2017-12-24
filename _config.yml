@@ -8,11 +8,9 @@ baseurl: '/CodeBasics/'
 
 author:
   name: 'Claus'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  email: s_cbrunn@icloud.com
+  github_username:  s-cbrunn
+  xing_username:  joshgerdes
 
 defaults:
   -
