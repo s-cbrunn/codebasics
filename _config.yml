@@ -1,8 +1,8 @@
 # Site settings
 title: Code Basics
 description: 'ABAP, UI5 and more '
-url: 'https://s-cbrunn.github.io/CodeBasics/'
-baseurl: '/CodeBasics'
+url: 'https://s-cbrunn.github.io/codebasics/'
+baseurl: '/codebasics'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
