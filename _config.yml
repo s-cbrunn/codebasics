@@ -1,8 +1,8 @@
 # Site settings
-title: Code Basics
+title: Knowledge Vault
 description: 'ABAP, UI5 and more '
-url: 'https://s-cbrunn.github.io/codebasics/'
-baseurl: '/codebasics'
+url: 'https://s-cbrunn.github.io/knowledgevault/'
+baseurl: '/knowledgevault'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
