@@ -6,19 +6,24 @@ tags: [About]
 ---
 
 ``` abap
+
+start-of-selection.
+
+perform read.
+
 write: 'TEST'.
+
+DATA(lvtest) = new ALV().
+
+endform.
 ```
 
-```
-def foo
-  puts 'foo'
-end
+``` javascript
+print("TEST");
 ```
 
 
-...meinem persönlichen Knowledge Vault! Hier werden alle meine Erkenntisse in der SAP-Entwicklung gesammelt, welche mich beeindruckt haben oder ich einfach gerne festhalten möchte damit ich diese nicht mehr vergesse.
-
-Es würde mich freuen, wenn ich den ein oder anderen damit auch weiterhelfen kann.
+Hallo?
 
 
 
