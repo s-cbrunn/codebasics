@@ -1,0 +1,11 @@
+---
+title:  "About me"
+permalink: about
+hidden: true
+---
+
+<p align="center">
+<img src="{{ site.baseurl }}/images/profile.jpg" class="user-image" alt="MyIcon">
+</p>
+
+Vielleicht werde ich mich mal vorstellen...
