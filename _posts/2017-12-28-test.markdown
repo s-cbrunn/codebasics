@@ -5,7 +5,7 @@ categories: [About]
 tags: [About]
 ---
 
-```
+``` abap
 write: 'TEST'.
 ```
 
