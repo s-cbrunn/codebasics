@@ -1,47 +1,43 @@
 <View controllerName="de.brunner.tm.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
 
-	
-			
-			
-						<Page title="{i18n>headerPage}">
+						<Page id="idPage" title="{i18n>headerPage}">
 						
 						<Toolbar>
 								<SearchField id="idSearchField" width="100%" placeholder="{i18n>searchPlaceholder}" search="onSearch"/>
 						</Toolbar>
 
-							<IconTabBar id="idIconTabBar" select="onSearch" class="sapUiResponsiveContentPadding">
+							<IconTabBar id="idIconTabBar" select="onSelectTab" class="sapUiResponsiveContentPadding">
 							<content>
-								<Table id="idTableAll" inset="false" items="{path: '/data'}" growingThreshold="20" growing="true">
+								<Table id="idRecipes" inset="false" items="{recipes>/data}" growingThreshold="20" growing="true">
 											<columns>
-												<Column width="10%">
-													<Text text="{i18n>cover}" />
+												<Column>
+													<Text text="{i18n>image}" />
 												</Column>
 												<Column>
-													<Text text="{i18n>album}" />
+													<Text text="{i18n>name}" />
 												</Column>
-												<Column>
-													<Text text="{i18n>titel}" />
-												</Column>
-												<Column>
-													<Text text="{i18n>artist}" />
+												<Column width="10%"> 
+													<Text text="{i18n>time}" />
 												</Column>
 												<Column width="10%">
-													<Text text="{i18n>download}" />
+													<Text text="{i18n>prepartion}" />
 												</Column>
-												<Column>
-													<Text text="{i18n>progress}" />
+												<Column width="10%">
+													<Text text="{i18n>portion}" />
+												</Column>
+												<Column width="10%">
+													<Text text="{i18n>difficulty}" />
 												</Column>
 											</columns>
 												<items>
-													<ColumnListItem vAlign="Middle">
+													<ColumnListItem vAlign="Middle" type="Navigation" press="onDetail">
 														<cells>
-															<ObjectStatus icon="{album/cover_small}" />
-															<Text text="{album/title}" />
-															<Text text="{title}" />
-															<Text text="{artist/name}" />
-															<core:Icon src="sap-icon://download" press="onDownload" />
-														<!-->	<ProgressIndicator percentValue="{progress}" displayValue="{progress}%" showValue="{enableProgress}" state="Success" enabled="false" class="sapUiSmallMarginBottom"/> -->
-															<Text text="{progress}%" />
+															<Image src="{recipes>image}" width="200px" heigth="200px" />
+															<Text text="{recipes>name}" />
+															<Text text="{ path: 'recipes>times/total', formatter: '.calcTime'}" /> 
+															<Text text="{ path: 'recipes>times/active', formatter: '.calcTime' }" />
+															<Text text="{recipes>portion}" />
+															<Text text="{ path: 'recipes>recipe/difficulty', formatter: '.difficulty' }" />
 														</cells>
 													</ColumnListItem>
 												</items>
@@ -51,10 +47,27 @@
 										
 										<IconTabFilter icon="sap-icon://filter-facets"  text="{i18n>all}" key="allRecipes" /> 
 										<IconTabSeparator />
-										<IconTabFilter icon="sap-icon://attachment-audio" text="{i18n>albumList}" key="album" />    
-										<IconTabFilter icon="sap-icon://list"  text="{i18n>playlistList}" key="playlist" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>vorsalat}" 	key="VrkNavCategory-RPF-001" />    
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>suppen}" 		key="VrkNavCategory-RPF-002" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>nudel}" 		key="VrkNavCategory-RPF-003" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>fleisch}" 	key="VrkNavCategory-RPF-004" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>fisch}" 		key="VrkNavCategory-RPF-005" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>vegie}" 		key="VrkNavCategory-RPF-006" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>haupt}" 		key="VrkNavCategory-RPF-007" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>beilagen}" 	key="VrkNavCategory-RPF-008" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>saucen1}" 	key="VrkNavCategory-RPF-009" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>desserts}" 	key="VrkNavCategory-RPF-011" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>backen1}" 	key="VrkNavCategory-RPF-012" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>backen2}" 	key="VrkNavCategory-RPF-013" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>brot}" 		key="VrkNavCategory-RPF-014" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>getaenke}" 	key="VrkNavCategory-RPF-015" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>rezepte}" 	key="VrkNavCategory-RPF-016" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>baby}" 		key="VrkNavCategory-RPF-017" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>saucen2}" 	key="VrkNavCategory-RPF-018" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>fruehstueck}" key="VrkNavCategory-RPF-019" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>snacks}" 		key="VrkNavCategory-RPF-020" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>menue}" 		key="VrkNavigationCategory-rpf-000001303095" />
 										
-									
 									</items>
 								</IconTabBar>
 								

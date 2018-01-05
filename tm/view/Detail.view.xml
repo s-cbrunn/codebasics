@@ -1,0 +1,55 @@
+<View controllerName="de.brunner.tm.controller.Detail" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+
+	
+			
+			
+						<Page id="idPage" showNavButton="true" navButtonPress="onBack">
+	<Panel>
+							<l:ResponsiveSplitter defaultPane="default">
+		<l:PaneContainer>
+			<l:SplitPane width="20%">
+				<Panel id="idRecipeList" headerText="{i18n>leftHeader}" height="100%" content="{recipes>/recipe/recipeIngredientGroups}">
+			
+					 <List headerText="{i18n>leftTabHeader}" items="{recipes>recipeIngredients}">
+					 
+						 <StandardListItem title="{recipes>quantity/value} {recipes>quantity/from} {recipes>quantity/to} {recipes>recipeIngredientUnits/0/notation} {recipes>notation}" description="{recipes>preparation}"/>
+					</List>
+				
+				</Panel>
+			</l:SplitPane>
+		
+				
+				<l:SplitPane width="80%" >
+					 <Panel id="idStepGroup" headerText="{i18n>steps}" height="100%" content="{recipes>/recipe/recipeStepGroups}">
+	
+					 	<List  items="{recipes>recipeSteps}">
+						 <headerToolbar>
+							<Toolbar>
+								<Title text="{i18n>preparation}: { path: 'recipes>/recipe/recipeStepGroups', formatter: '.preparation1'} " level="H2" />
+							</Toolbar>
+							</headerToolbar>
+							<NotificationListItem
+							title="{i18n>step} {recipes>number}"
+							description="{recipes>formattedText}"
+							unread="true"
+							showCloseButton="false"
+							truncate="false"
+							hideShowMoreButton="false" 
+							priority="None"/>
+				
+					 </List>
+			
+				</Panel>
+				</l:SplitPane>
+			</l:PaneContainer>
+		
+	</l:ResponsiveSplitter>
+</Panel>
+						</Page>
+
+			
+
+
+</View>
+
+
