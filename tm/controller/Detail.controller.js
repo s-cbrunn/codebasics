@@ -1,7 +1,13 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/ui/model/json/JSONModel"
-], function(Controller, JSONModel) {
+	"sap/ui/model/json/JSONModel",
+	"sap/m/Dialog",
+	"sap/m/List",
+	"sap/m/StandardListItem",
+	"sap/m/Button",
+	"sap/m/Table",
+	"sap/m/ObjectIdentifier"
+], function(Controller, JSONModel, Dialog, List, StandardListItem, Button, Table, ObjectIdentifier) {
 	"use strict";
 
 	return Controller.extend("de.brunner.tm.controller.Detail", {
@@ -75,6 +81,46 @@ sap.ui.define([
 					return "";
 				}
 			}
+		},
+
+		onDialogPress: function () {
+			var me = this;
+
+
+			if (!me.pressDialog) {
+				me.pressDialog = new Dialog({
+					title: 'Tipps & Tricks',
+					content: new Table({
+					columns:[new sap.m.Column()],
+					items:{ path: 'recipes>/recipe/additionalInformations',         
+							template: new sap.m.ColumnListItem({ cells:[new ObjectIdentifier({
+																 title: {parts:[{path : 'recipes>type'}], formatter: function(obj){
+																														switch(obj){
+																															case "TIP":
+																																return "Tipp"
+																															case "BACKGROUND_INFO":
+																																return "Wissenswertes"
+																															case "VARIATION":
+																																return "Varianten"
+																															default:
+																																return obj;
+																														}
+																													  }},
+       															text: "{recipes>information}"})]
+  																})
+						  }
+					}),
+					beginButton: new Button({
+						text: 'Close',
+						press: function () {
+							me.pressDialog.close();
+						}.bind(me)
+					})
+				});
+				me.getView().addDependent(me.pressDialog);
+			}
+
+			me.pressDialog.open();
 		}
 
 	});
