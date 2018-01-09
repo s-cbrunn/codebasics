@@ -89,7 +89,7 @@ sap.ui.define([
 
 			if (!me.pressDialog) {
 				me.pressDialog = new Dialog({
-					title: 'Tipps & Tricks',
+					title: "{i18n>header}",
 					content: new Table({
 					columns:[new sap.m.Column()],
 					items:{ path: 'recipes>/recipe/additionalInformations',         
@@ -111,7 +111,7 @@ sap.ui.define([
 						  }
 					}),
 					beginButton: new Button({
-						text: 'Close',
+						text: "{i18n>close}",
 						press: function () {
 							me.pressDialog.close();
 						}.bind(me)
