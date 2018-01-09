@@ -10,7 +10,8 @@
 								<l:SplitPane width="20%">
 									<Panel id="idRecipeList" headerText="{i18n>leftHeader}" height="100%" content="{recipes>/recipe/recipeIngredientGroups}">
 					 					<List headerText="{i18n>leftTabHeader}" items="{recipes>recipeIngredients}">
-											<StandardListItem title="{recipes>quantity/value} {recipes>quantity/from} {recipes>quantity/to} {recipes>recipeIngredientUnits/0/notation} {recipes>notation}" description="{recipes>preparation}"/>
+											<!-- <StandardListItem title="{recipes>quantity/value} {recipes>quantity/from} {recipes>quantity/to} {recipes>recipeIngredientUnits/0/notation} {recipes>notation}" description="{recipes>preparation}"/> -->
+											<StandardListItem title="{path: 'recipes>', formatter: '.quantity'}" description="{recipes>preparation}"/>
 										</List>
 									</Panel>
 								</l:SplitPane>

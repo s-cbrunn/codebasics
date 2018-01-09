@@ -18,7 +18,6 @@ sap.ui.define([
 			oRouter.getRoute("detail").attachPatternMatched(me._loadNavObjects, me);
 			me.recipeSteps = 0;
 			me.recipeList = 0;
-			debugger;
 
 			var oPanelRight = me.getView().byId("idStepGroup");
 			oPanelRight.onAfterRendering = function() {
@@ -121,6 +120,27 @@ sap.ui.define([
 			}
 
 			me.pressDialog.open();
+		},
+
+		quantity: function(obj){
+			var sQuantity = "";
+			//<StandardListItem title="{recipes>quantity/value} {recipes>quantity/from} {recipes>quantity/to} {recipes>recipeIngredientUnits/0/notation} {recipes>notation}
+			if(obj.quantity.value !== undefined){
+				sQuantity += obj.quantity.value;
+			}else if(obj.quantity.from !== undefined && obj.quantity.to !== undefined){
+				sQuantity = obj.quantity.from + " - " + obj.quantity.to;
+			}
+
+			if(obj.recipeIngredientUnits.length > 0){
+				if(obj.recipeIngredientUnits[0].notation !== undefined){
+					sQuantity += " " + obj.recipeIngredientUnits[0].notation
+				}
+			}
+				sQuantity += " " + obj.ingredient.name;
+			if(obj.optional === true){
+				sQuantity += " (optional)";
+			}
+				return sQuantity;
 		}
 
 	});
