@@ -124,7 +124,6 @@ sap.ui.define([
 
 		quantity: function(obj){
 			var sQuantity = "";
-			//<StandardListItem title="{recipes>quantity/value} {recipes>quantity/from} {recipes>quantity/to} {recipes>recipeIngredientUnits/0/notation} {recipes>notation}
 			if(obj.quantity.value !== undefined){
 				sQuantity += obj.quantity.value;
 			}else if(obj.quantity.from !== undefined && obj.quantity.to !== undefined){

@@ -38,7 +38,6 @@ sap.ui.define([
 
 		onSelectTab : function (oEvent){
 			var me = this;
-			debugger;
 			var aFilters = [];
 			var aFilter = [];
 			if(oEvent.getParameter("key") !== undefined){
