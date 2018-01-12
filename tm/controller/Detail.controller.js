@@ -135,7 +135,12 @@ sap.ui.define([
 					sQuantity += " " + obj.recipeIngredientUnits[0].notation
 				}
 			}
+			if(obj.ingredient.name === undefined){
+				sQuantity += " " + obj.notation;
+			}else{
 				sQuantity += " " + obj.ingredient.name;
+			}
+				
 			if(obj.optional === true){
 				sQuantity += " (optional)";
 			}
