@@ -124,7 +124,7 @@ sap.ui.define([
 
 		quantity: function(obj){
 			var sQuantity = "";
-			if(obj.quantity.value !== undefined){
+			if(obj.quantity.value !== undefined && obj.quantity.value !== 0){
 				sQuantity += obj.quantity.value;
 			}else if(obj.quantity.from !== undefined && obj.quantity.to !== undefined){
 				sQuantity = obj.quantity.from + " - " + obj.quantity.to;
