@@ -1,4 +1,4 @@
-# Knowldge Vault for SAP development
+# Knowledge Vault for SAP development
 
 
 ---
