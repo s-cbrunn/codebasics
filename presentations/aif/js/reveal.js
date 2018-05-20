@@ -4532,6 +4532,7 @@
 
 		// If auto-sliding is enabled we need to cue up
 		// another timeout
+		setAnimation();
 		cueAutoSlide();
 
 	}
