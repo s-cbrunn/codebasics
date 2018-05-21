@@ -4378,13 +4378,13 @@
 	function setAnimation(){
 
 		if ( Reveal.isFirstSlide() === true){
-			//pJSDom[0].pJS.particles.number.value = 85;
+			pJSDom[0].pJS.particles.number.value = 85;
 			pJSDom[0].pJS.particles.move.enable = true;
 			pJSDom[0].pJS.particles.number.density.enable = true;
 			pJSDom[0].pJS.fn.particlesRefresh();
 		} else {
-			//pJSDom[0].pJS.particles.number.value = 0;
 			if (pJSDom[0].pJS.particles.move.enable !== false){
+				pJSDom[0].pJS.particles.number.value = 20;
 				pJSDom[0].pJS.particles.move.enable = false;
 				pJSDom[0].pJS.particles.number.density.enable = false;
 				pJSDom[0].pJS.fn.particlesRefresh();
