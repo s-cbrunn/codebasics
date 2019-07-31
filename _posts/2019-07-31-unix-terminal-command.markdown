@@ -10,9 +10,10 @@ Unix commands
 ***
 
 **ls** steht für list und zeigt den Inhalt eines Verzeichnisses bzw. Ordners an
-~~~~
-ls [OPTION] [VERZEICHNIS] 
-~~~~
+
+```
+ ls [OPTION] [VERZEICHNIS] 
+```
 
 | Option        | Beschreibung  | 
 | ------------- |:-------------

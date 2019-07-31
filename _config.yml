@@ -28,7 +28,7 @@ permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge
 auto: true
-
+future: true
 
 sass:
     sass_dir: _sass
