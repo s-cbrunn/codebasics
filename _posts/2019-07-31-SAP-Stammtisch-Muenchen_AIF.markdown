@@ -2,7 +2,7 @@
 title:  "Application Interface Framework (AIF)"
 date:   2019-07-28 11:29:00
 categories: [SAP]
-tags: [SAP]
+tags: [SAP, Application Interface Framework]
 ---
 
 Am 24.05.2018 durfte ich beim SAP Stammtsich München einen Vortrag zum Thema "Application Interface Framework" (AIF) halten. Der folgende Link verweist auf die Präsentation.
