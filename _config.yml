@@ -1,6 +1,6 @@
 # Site settings
 title: Knowledge Vault
-description: 'ABAP, UI5 and more '
+description: 'ABAP, Fiori, SAP HANA and more '
 url: 'https://s-cbrunn.github.io/knowledgevault/'
 baseurl: '/knowledgevault'
 # google_analytics: 'UA-XXXXXX-X'
@@ -40,5 +40,5 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-gems: ['jekyll-paginate']
+plugins: ['jekyll-paginate']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

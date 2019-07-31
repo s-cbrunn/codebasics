@@ -8,9 +8,7 @@ tags: [About]
 
 
 
-...meinem persönlichen Knowledge Vault! Hier werden alle meine Erkenntisse in der SAP-Entwicklung gesammelt, welche mich beeindruckt haben oder ich einfach gerne festhalten möchte damit ich diese nicht mehr vergesse.
-
-Es würde mich freuen, wenn ich den ein oder anderen damit auch weiterhelfen kann.
+...meinem Knowledge Vault! Hier werden alle meine Erkenntisse und Erfahrungen in der SAP-Entwicklung gesammelt.
 
 
 
