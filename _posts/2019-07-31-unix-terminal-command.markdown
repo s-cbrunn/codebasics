@@ -29,5 +29,16 @@ Unix commands
 
 ---
 
+**ln** steht für link und erzeugt eine Verknüpfung zu einer Datei oder einem Verzeichnis. 
 
+```
+ln [OPTION]... ZIEL [VERKNÜPFUNGSNAME] 
+``` 
 
+| Option        | Beschreibung  | 
+| ------------- |:-------------
+| -i            | fragt vor dem Überschreiben nach
+| -s            | erzeugt eine symbolische Verknüpfung anstatt eines Hardlinks     |  
+| -r            | erzeugt - auch bei Angabe absoluter Pfade - eine Verknüpfung mit relativen Pfaden zueinander (setzt -s voraus)
+| -f            | vorhandene mit dem VERKNÜPFUNGSNAMEn gleichnamige Verknüpfungen oder auch Dateien überschreiben
+    
