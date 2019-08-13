@@ -18,6 +18,6 @@ Bei der Minifizierung der UI5-Ressourcen wird der komplette Javascript-Code in d
 
 Str + Alt + Shift + S &rarr; Diagnostics &rarr; Technical Information &rarr; Debug Sources "ON"
 
-![Diagnostics](/images/screenshot/ui5_diagnostics.png "UI5 Diagnostics")
+![Diagnostics](/knowledgevault/images/screenshot/ui5_diagnostics.PNG "UI5 Diagnostics")
 
 
