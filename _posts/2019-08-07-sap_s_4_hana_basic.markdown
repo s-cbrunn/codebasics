@@ -5,7 +5,7 @@ categories: [SAP]
 tags: [SAP, ABAP, S/4HANA]
 ---
 
-SAP S/4HANA ist die neueste und vierte Generation Unternehmenssoftware von SAP. Das System von SAP setzt ausschließlich auf die In-Memory-Plattform SAP HANA. Mit dieser Datenbank können nun auch analytische Szenarien auf Basis operativer Daten sofort ausgeführt werden. 
+SAP S/4HANA ist die neueste und vierte Generation Unternehmenssoftware von SAP. Das System von SAP setzt ausschließlich auf die In-Memory-Plattform SAP HANA. Mit dieser Datenbank können nun auch analytische Szenarien auf Basis operativer Daten in Echzeit ausgeführt werden. 
 
 Die S/4 folgt neben den Echtzeitanalysen auch dem "Principle of One" Ansatz. In den vergangenen SAP ERP-Systemen wurden redundante Frameworks und Datenmodelle zugelassen, welche nun mit der S/4 HANA bereinigt werden sollen. Anders als bei den vorherigen ERP-Systemen, existiert für ein Geschäftsobjekt lediglich ein Datenmodell. D.h. Tabellen mit aggregierten Daten werden in Zukunft wegfallen, da die Informationen während der Laufzeit in Sekunden berechnet werden können. Ein parade Beispiel dafür liefert der SAP Hinweis 2206980, welcher die Änderungen des Datenmodell für die Materialbestände beschreibt.
 
