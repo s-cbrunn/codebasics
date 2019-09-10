@@ -1,0 +1,111 @@
+<View controllerName="de.brunner.tm.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+
+						<Page id="idPage" title="{i18n>headerPage}">
+						
+						<Toolbar>
+								<SearchField id="idSearchField" width="100%" placeholder="{i18n>searchPlaceholder}" search="onSearch"/>
+						</Toolbar>
+
+							<IconTabBar id="idIconTabBar" select="onSelectTab" class="sapUiResponsiveContentPadding">
+							<content>
+								<Table id="idRecipes" inset="false" items="{recipes>/data}" growingThreshold="20" growing="true">
+											<columns>
+												<Column width="12em">
+													<Text text="{i18n>image}" />
+												</Column>
+												<Column  minScreenWidth="Tablet" demandPopin="true">
+													<Text text="{i18n>name}" />
+												</Column>
+												<Column minScreenWidth="Tablet" demandPopin="true">
+													<Text text="{i18n>time}" />
+												</Column>
+												<Column minScreenWidth="Tablet" demandPopin="true">
+													<Text text="{i18n>prepartion}" />
+												</Column>
+												<Column minScreenWidth="Tablet" demandPopin="true">
+													<Text text="{i18n>portion}" />
+												</Column>
+												<Column minScreenWidth="Tablet" demandPopin="true">
+													<Text text="{i18n>geraete}" />
+												</Column>
+												<Column minScreenWidth="Tablet" demandPopin="true">
+													<Text text="{i18n>difficulty}" />
+												</Column>
+											</columns>
+												<items>
+													<ColumnListItem vAlign="Middle" type="Navigation" press="onDetail">
+														<cells>
+															<Image src="{recipes>image}" width="170px" heigth="500px" />
+															<Text text="{recipes>name}" />
+															<Text text="{ path: 'recipes>totalTime'}" /> 
+															<Text text="{ path: 'recipes>prepTime'}" />
+															<Text text="{recipes>recipeYield}" />
+															<Text text="{recipes>geraete}" />
+															<Text text="{ path: 'recipes>difficulty', formatter: '.difficulty' }" />
+														</cells>
+													</ColumnListItem>
+												</items>
+											</Table>
+							</content>
+									<items>
+										
+										<IconTabFilter icon="sap-icon://filter-facets"  text="{i18n>all}" key="allRecipes" /> 
+										<IconTabSeparator />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>vorspeisen}" 	key="Vorspeisen und Salate" />    
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>suppen}" 		key="Suppen" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>pasta}" 		key="Nudel- und Reisgerichte" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>haupt}" 		key="Hauptgerichte" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>beilagen}" 	key="Beilagen" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>desserts}" 	key="Desserts" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>backen}" 		key="Backen" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>brot}" 		key="Brot und Brötchen" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>getaenke}" 	key="Getränke" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>basiswissen}" key="Grundrezepte" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>baby}" 		key="Baby-Beikost/Breie" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>saucen}" 		key="Saucen, Dips und Brotaufstriche" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>fruehstueck}" key="Frühstück" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>snacks}" 		key="Snacks" />
+										<IconTabFilter icon="sap-icon://meal" text="{i18n>menue}" 		key="Menüs und mehr" />
+										
+									</items>
+								</IconTabBar>
+								
+						</Page>
+
+</View>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
