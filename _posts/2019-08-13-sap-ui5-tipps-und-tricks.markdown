@@ -9,6 +9,7 @@ tags: [SAP, UI5]
 <br>
 
 #### [UI5 debug mode aktivieren](#debug_mode)
+#### [UI5 Releasezyklen](#releasezyklen)
 ***
 <br>
 
@@ -21,3 +22,11 @@ Str + Alt + Shift + S &rarr; Diagnostics &rarr; Technical Information &rarr; Deb
 ![Diagnostics](/knowledgevault/images/screenshot/ui5_diagnostics.PNG "UI5 Diagnostics")
 
 
+<br>
+<br>
+
+#### **UI5 Releasezyklen** <a name="releasezyklen"></a>
+Eine typische Versionsnummer für ein SAPUI5-Release kann wie folgt aussehen:<br>
+SAPUI5-Version **1.32**.*9* <br>
+
+Die **fett** hervorgehobenen Zeichen geben die Hauptversionsnummer an, während die kursiv gekennzeichneten Zeichen für die aktuelle Patchversion stehen. Alle geradzahligen Releases sind externe Releases, die für SAP-Kunden und Partner zur Verfügung stehen. Die ungeraden Zahlen stehen für interne Releases, die der Öffentlichkeit nicht zur Verfügung stehen 
