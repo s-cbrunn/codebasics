@@ -10,6 +10,10 @@ tags: [SAP, UI5]
 
 #### [UI5 debug mode aktivieren](#debug_mode)
 #### [UI5 Releasezyklen](#releasezyklen)
+#### [UI5 Version im SAP-System ermitteln](#versionui5)
+#### [SAPUI5-Bibliothek vom lokalen ABAP-Server für eine eigenständige Fiori-App ohne Launchpad laden](#ui5libload)
+
+
 ***
 <br>
 
@@ -30,3 +34,31 @@ Eine typische Versionsnummer für ein SAPUI5-Release kann wie folgt aussehen:<br
 SAPUI5-Version **1.32**.*9* <br>
 
 Die **fett** hervorgehobenen Zeichen geben die Hauptversionsnummer an, während die kursiv gekennzeichneten Zeichen für die aktuelle Patchversion stehen. Alle geradzahligen Releases sind externe Releases, die für SAP-Kunden und Partner zur Verfügung stehen. Die ungeraden Zahlen stehen für interne Releases, die der Öffentlichkeit nicht zur Verfügung stehen 
+
+<br>
+<br>
+
+#### **UI5 Version im SAP-System ermitteln** <a name="versionui5"></a>
+Für die Ermittlung der UI5 Version im SAP Backend System gibt es mehrere Möglichkeiten. Ist bereits ein Fiori Launchpad konfiguriert, so kann mit dem Shortcut Ctrl+Shift+Alt+P ein kleines Info-Fenster über die vorhandene UI5 Version geöffnet werden <br>
+
+Auch über die URL *host*:*port*/sap/public/bc/ui5_ui5/index.html kann die UI5 Version bestimmt werden <br>
+
+Weitere Tipps gibt es im SAP Hinweis 2363155 
+
+<br>
+<br>
+
+#### **SAPUI5-Bibliothek vom lokalen ABAP-Server für eine eigenständige Fiori-App ohne Launchpad laden** <a name="ui5libload"></a>
+
+ Um eine eigene Fiori-App auf dem ABAP-Server im Standalone-Modus zu starten ohne das Fiori Launchpad zu verwenden, muss eine index.html Datei mit den folgenden Coding angelegt werden.
+
+```
+<script id="sap-ui-bootstrap"
+type="text/javascript"
+src="/sap/public/bc/ui5_ui5/1/resources/sap-ui-core.js"
+data-sap-ui-theme="sap_goldreflection"
+data-sap-ui-libs="sap.ui.commons">
+</script>
+```
+
+Siehe auch SAP Hinweis 2669705
