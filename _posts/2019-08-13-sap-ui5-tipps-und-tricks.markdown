@@ -48,7 +48,7 @@ Weitere Tipps gibt es im SAP Hinweis 2363155
 <br>
 <br>
 
-#### **SAPUI5-Bibliothek vom lokalen ABAP-Server für eine eigenständige Fiori-App ohne Launchpad laden** <a name="ui5libload"></a>
+#### **SAPUI5-Bibliothek vom lokalen ABAP-Server für eine eigenständige Fiori-App laden (ohne Launchpad)** <a name="ui5libload"></a>
 
  Um eine eigene Fiori-App auf dem ABAP-Server im Standalone-Modus zu starten ohne das Fiori Launchpad zu verwenden, muss eine index.html Datei mit den folgenden Coding angelegt werden.
 
