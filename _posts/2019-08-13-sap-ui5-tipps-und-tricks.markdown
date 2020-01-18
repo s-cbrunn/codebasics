@@ -57,7 +57,7 @@ Weitere Tipps gibt es im SAP Hinweis 2363155
 type="text/javascript"
 src="/sap/public/bc/ui5_ui5/1/resources/sap-ui-core.js"
 data-sap-ui-theme="sap_goldreflection"
-data-sap-ui-libs="sap.ui.commons">
+data-sap-ui-libs="sap.ui.commons"> oder "...sap.m"
 </script>
 ```
 
