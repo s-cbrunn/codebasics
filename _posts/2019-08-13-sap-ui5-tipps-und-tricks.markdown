@@ -71,6 +71,6 @@ Siehe auch SAP Hinweis 2669705
 
 Wann und in welcher UI-Komponenten Version welche UI5-Version unterstütz wird, lässt sich auf den folgenden Seiten ermitteln 
 
-* https://sapui5.hana.ondemand.com/versionoverview.html
+* <https://sapui5.hana.ondemand.com/versionoverview.html>
 
-* https://support.sap.com/en/release-upgrade-maintenance/maintenance-information/schedules-for-maintenance-deliveries/SAP_UI-schedule.html
+* <https://support.sap.com/en/release-upgrade-maintenance/maintenance-information/schedules-for-maintenance-deliveries/SAP_UI-schedule.html>
