@@ -12,6 +12,7 @@ tags: [SAP, UI5]
 #### [UI5 Releasezyklen](#releasezyklen)
 #### [UI5 Version im SAP-System ermitteln](#versionui5)
 #### [SAPUI5-Bibliothek vom lokalen ABAP-Server für eine eigenständige Fiori-App ohne Launchpad laden](#ui5libload)
+#### [UI5 Maintenance Status](#ui5versionsupport)
 
 
 ***
@@ -62,3 +63,14 @@ data-sap-ui-libs="sap.ui.commons"> oder "...sap.m"
 ```
 
 Siehe auch SAP Hinweis 2669705
+
+<br>
+<br>
+
+#### **UI5 Maintenance Status** <a name="ui5versionsupport"></a>
+
+Wann und in welcher UI-Komponenten Version welche UI5-Version unterstütz wird, lässt sich auf den folgenden Seiten ermitteln 
+
+* https://sapui5.hana.ondemand.com/versionoverview.html
+
+* https://support.sap.com/en/release-upgrade-maintenance/maintenance-information/schedules-for-maintenance-deliveries/SAP_UI-schedule.html
