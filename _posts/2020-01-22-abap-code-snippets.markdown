@@ -23,3 +23,4 @@ Sind die Felder von zwei internen Tabellen nicht zu 100% identisch, dann muss ni
 ``` 
 lt_tab2 = CORRESPONDING #( lt_tab1 MAPPING field = col2 ).
 ```
+https://s-cbrunn.github.io/knowledgevault/2020/abap-code-snippets/ (Report ZDEMO_CORRESPONDING_MAPPING)
