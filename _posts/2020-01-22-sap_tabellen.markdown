@@ -21,9 +21,11 @@ tags: [SAP, ABAP]
 Möchte man Konstanten schnell in Interfaces auffinden, dann kann die Tabelle SEOCOMPODF weiterhelfen
 
 1) SE16N mit der Tabelle SEOCOMPODF öffnen
+
 2) Bei Objekttypname z.B. auf Kundennamensraum eingschränken und bei Initialwert den gesuchten Konstantenwert eingegben (Hochkomma berücksichtigen!)
 
 ![SEOCOMPODF](/knowledgevault/images/screenshot/SE16_SEOCOMPODF.PNG "Tabelle SEOCOMPODF")
+
 
 3) Aus der Ergebnismenge kann das passende Konstanten-Interface ausgewählt werden
 
@@ -40,4 +42,4 @@ Hinweis: Im Feld TEXT wird Groß-/Kleinschreibung beachtet.
 ![T100](/knowledgevault/images/screenshot/SE16_T100.PNG "Tabelle T100")
 
 ![Result](/knowledgevault/images/screenshot/messages_se16.PNG "Result T100")
-messages_se16
+
