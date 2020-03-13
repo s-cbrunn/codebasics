@@ -11,6 +11,7 @@ tags: [SAP, ABAP]
 
 #### [Konstanten in Interfaces finden](#constinferface)
 #### [Nachrichtenklasse und Nachrichtennummer ermitteln](#messages)
+#### [SAP Transaktionen](#transaction)
 
 ***
 <br>
@@ -42,4 +43,10 @@ Hinweis: Im Feld TEXT wird Groß-/Kleinschreibung beachtet.
 ![T100](/knowledgevault/images/screenshot/SE16_T100.PNG "Tabelle T100")
 
 ![Result](/knowledgevault/images/screenshot/messages_se16.PNG "Result T100")
+<br>
+<br>
+
+#### **SAP Transaktionen** <a name="transaction"></a>
+
+In der Tabelle TSTC sind alle SAP Transaktionen abgelegt
 
