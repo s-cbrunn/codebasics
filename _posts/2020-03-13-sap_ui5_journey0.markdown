@@ -1,14 +1,14 @@
 ---
-title:  "SAP UI5 Journey Teil1 - Architektur"
+title:  "SAP UI5 Journey Teil 1 - Architektur"
 date:   2020-03-13 21:26:00
 categories: [SAP]
 tags: [SAP, UI5]
 ---
 
 
-Meine SAPUI5 Reise ist ledigleich eine Wissenssammlung d.h. für Anfänger kann es unter Umständen etwas schwer sein den Themen zu folgen. 
-
 # Architektur
+
+Meine SAPUI5 Reise ist ledigleich eine Wissenssammlung d.h. für Anfänger kann es unter Umständen etwas schwer sein den Themen zu folgen. 
 
 ## Bibliotheken  
 

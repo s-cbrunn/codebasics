@@ -13,6 +13,7 @@ tags: [SAP, UI5]
 #### [UI5 Version im SAP-System ermitteln](#versionui5)
 #### [SAPUI5-Bibliothek vom lokalen ABAP-Server für eine eigenständige Fiori-App ohne Launchpad laden](#ui5libload)
 #### [UI5 Maintenance Status](#ui5versionsupport)
+#### [UI5 Variant Management - Öffentliche Sicht für nicht Key-User](#variantenmg)
 
 
 ***
@@ -74,3 +75,16 @@ Wann und in welcher UI-Komponenten Version welche UI5-Version unterstütz wird, 
 * <https://sapui5.hana.ondemand.com/versionoverview.html>
 
 * <https://support.sap.com/en/release-upgrade-maintenance/maintenance-information/schedules-for-maintenance-deliveries/SAP_UI-schedule.html>
+
+<br>
+<br>
+
+#### **UI5 Variant Management - Öffentliche Sicht für nicht Key-User** <a name="variantenmg"></a>
+
+Nicht Key-User können die Checkbox "Öffentlich" auswählen. Nachdem die Checkbox ausgewählt wurde, wird aber keine öffentliche Sicht angelegt. 
+
+![VarManagment](/knowledgevault/images/screenshot/varmng.PNG "Variant Management")
+
+Grundsätzlich sollte ein "nicht Key-User" die Möglichkeit überhaupt nicht haben, die Checkbox Öffentlich auszuwählen.
+
+Um dieses Verhalten zu korrigieren, muss der Report /UIF/SET_KU_CHECK_FOR_VARIANT ausgeführt werden. Mehr Infos zu diesen Report gibt es im Hinweis 2658662 
