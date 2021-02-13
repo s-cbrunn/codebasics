@@ -6,8 +6,6 @@ tags: [node.js, UI5]
 ---
 
 
-# Node.js Grundlagen
-
 Hier werden alle wichtigen Node.js Grundlagen gesammelt. Node.js kann über die folgende Seite runtergeladen und installiert werden 
 
  * https://nodejs.org/en/

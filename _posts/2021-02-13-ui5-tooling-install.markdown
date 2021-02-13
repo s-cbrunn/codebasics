@@ -6,7 +6,6 @@ tags: [node.js, UI5]
 ---
 
 
-# UI5-Tooling Grundlagen
 
 Mit dem UI5-Tooling ist es möglich lokal auf dem eigenen Rechner UI5-Anwendungen zu entwickeln. 
 
