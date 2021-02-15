@@ -39,7 +39,39 @@ npm init --yes
 ui5 init
 ```
 
-* manifest.json Datei innerhalb des Verzeichnis webapp anlegen
+* manifest.json Datei innerhalb des Verzeichnis webapp anlegen - folgendes manifest ist nur ein einfaches Beispiel
+
+```
+{
+    "_version": "1.12.0",
+    "sap.app": {
+        "id": "de.my.id",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "sourceTemplate": {
+            "id": "ui5template.basicSAPUI5ApplicationProject",
+            "version": "1.38.11"
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5"
+    },
+    "sap.ui5": {
+        "dependencies": {
+            "minUI5Version": "1.60.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {}
+            }
+        }
+    }
+}
+```
 
 * UI5 Implementierung vornehmen
 
